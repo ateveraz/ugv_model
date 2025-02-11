@@ -1,1 +1,6 @@
-src/__pychache__/*
+# Ignore Python cache files
+src/__pycache__/__init__.cpython-36.pyc
+src/__pycache__/path_planning.cpython-36.pyc
+src/__pycache__/simulator.cpython-36.pyc
+src/__pycache__/ugv.cpython-36.pyc
+src/__pycache__/controller.cpython-36.pyc
