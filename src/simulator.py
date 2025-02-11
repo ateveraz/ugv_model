@@ -42,6 +42,12 @@ class Simulator:
         
         return self.t, self.states
 
+    def runCustom(self, time, show_animation = False):
+        """
+        Run custom simulation for specific applications. 
+        """
+        raise NotImplementedError("This method should be overridden by subclasses.")
+
     def animationSetup(self):
         self.fig = plt.figure()
 
