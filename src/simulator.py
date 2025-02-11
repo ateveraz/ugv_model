@@ -84,6 +84,19 @@ class Simulator:
         plt.title('Error norm')
         plt.grid('minor')
         plt.show()
+    
+    def plotXY(self):
+        """
+        Plots the states of the UGV in the XY plane.
+        """
+        plt.figure()
+        plt.plot(self.states[:, 0], self.states[:, 1], label='trajectory')
+        plt.xlabel('x [m]')
+        plt.ylabel('y [m]')
+        plt.title('UGV Trajectory')
+        plt.grid('minor')
+        plt.legend()
+        plt.show()
 
     def makeFrame(self, i):
         self.trajectory.set_data(self.states[:i, 0], self.states[:i, 1])
